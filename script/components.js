@@ -13,7 +13,7 @@
 
       <div id="authGuest">
         <div class="auth-brand">
-          <img src="${ROOT}../images/logo.png" alt="" class="auth-logo">
+          <img src="${ROOT}../images/logo.svg" alt="" class="auth-logo">
           <h2 id="authTitle">Welcome back</h2>
           <p class="auth-sub" id="authSub">Sign in to your Mokio account.</p>
         </div>
@@ -53,7 +53,7 @@
   const logoBlock = `
       <div class="footer-brand">
         <a href="${ROOT}index.html" class="logo">
-          <img src="${ROOT}../images/logo.png" alt="Mokio" class="logo-img">
+          <img src="${ROOT}../images/logo.svg" alt="Mokio" class="logo-img">
           <span class="logo-text">Mokio</span>
         </a>
         <p>Play. Connect. Create.</p>
