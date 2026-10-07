@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mod — Mokio</title>
+  <link rel="icon" href="../images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo.png" alt="Mokio" class="logo-img">
+        <span class="logo-text">Mokio</span>
+      </a>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="portal.html" class="dev-tab">Portal</a>
+      </nav>
+      <div class="nav-right">
+        <button type="button" class="account-btn" id="accountBtn">
+          <span class="account-btn-icon">M</span>
+          <span id="accountBtnText">Account</span>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="staff">
+    <div class="container">
+      <div class="section-header">
+        <h2>Mod area</h2>
+        <p>Only Mod and Owner can see this page. Build your moderator pages here.</p>
+      </div>
+      <div class="staff-card">
+        <div class="role-badge mod">Mod</div>
+        <h3>Your content goes here</h3>
+        <p>Edit <code>pages/mod.html</code> and add the site features you want mods to use.</p>
+      </div>
+    </div>
+  </section>
+
+    <div data-component="auth-modal"></div>
+
+  <div data-component="footer" data-variant="staff"></div>
+
+  <script>
+    window.MOKIO_REQUIRED_ROLES = ['owner', 'mod'];
+  </script>
+  <script src="../components.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

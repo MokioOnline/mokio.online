@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owner — Mokio</title>
+  <link rel="icon" href="../images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo.png" alt="Mokio" class="logo-img">
+        <span class="logo-text">Mokio</span>
+      </a>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="portal.html" class="dev-tab">Portal</a>
+      </nav>
+      <div class="nav-right">
+        <button type="button" class="account-btn" id="accountBtn">
+          <span class="account-btn-icon">M</span>
+          <span id="accountBtnText">Account</span>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="staff">
+    <div class="container">
+      <div class="section-header">
+        <h2>Owner area</h2>
+        <p>Accounts on the site. You only see email and role — never passwords or security keys.</p>
+      </div>
+      <div class="staff-card tos-admin">
+        <div class="role-badge owner">Legal</div>
+        <h3>Terms of Service</h3>
+        <p class="form-note">Current terms version: <strong id="tosVersionLabel">…</strong></p>
+        <p class="tos-admin-text">
+          Edit <code>Legal/terms-of-service.html</code> or <code>Legal/privacy-policy.html</code> first, then use this button.
+          Every user (including new sign-ins) must agree to the updated Terms and Privacy Policy before they can use their account;
+          anyone who declines is signed out.
+        </p>
+        <button type="button" class="btn btn-primary" id="forceTosBtn">Require everyone to accept updated Terms</button>
+        <p class="form-note" id="tosAdminNote"></p>
+      </div>
+      <div class="staff-card">
+        <div class="role-badge owner">Accounts</div>
+        <h3>All accounts</h3>
+        <p class="form-note" id="accountsNote">Loading accounts...</p>
+        <div class="accounts-wrap">
+          <table class="accounts-table">
+            <thead>
+              <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Role</th>
+              </tr>
+            </thead>
+            <tbody id="accountsBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <div data-component="auth-modal"></div>
+
+  <div data-component="footer" data-variant="staff"></div>
+
+  <script>
+    window.MOKIO_REQUIRED_ROLES = ['owner'];
+  </script>
+  <script src="../components.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

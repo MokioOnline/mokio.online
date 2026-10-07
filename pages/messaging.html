@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mokio Arc</title>
+  <meta name="description" content="Learn more about Mokio Messaging: fast conversations, game integration, and a platform built for mods.">
+  <link rel="icon" href="../images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo.png" alt="Mokio" class="logo-img">
+        <span class="logo-text">Mokio</span>
+      </a>
+      <nav class="nav-links">
+        <a href="../index.html#features">Features</a>
+        <a href="../index.html#vision">Vision</a>
+        <a href="../index.html#waitlist" class="btn btn-small">Join Waitlist</a>
+      </nav>
+      <div class="nav-right">
+        <a href="https://www.paypal.com/donate/?hosted_button_id=9AZPTK7UAUQBL" class="donate-btn" target="_blank" rel="noopener">Donate</a>
+        <button type="button" class="account-btn" id="accountBtn">
+          <span class="account-btn-icon">M</span>
+          <span id="accountBtnText">Sign In</span>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="pages/portal.html" class="dev-tab" id="staffNavLink" hidden>Portal</a>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <div class="container">
+      <div class="badge">Mokio Arc</div>
+      <h1>Chat first.<br><span class="gradient-text">Games next.</span></h1>
+      <p class="hero-subtitle">
+        Mokio Arc starts as a fast, modern chat app — then opens up to mods and games so conversations can turn into play without switching platforms.
+      </p>
+      <div class="hero-actions">
+        <a href="../index.html#waitlist" class="btn btn-primary">Join the Waitlist</a>
+        <a href="music.html" class="btn btn-secondary">Check out Wave</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features feature-detail-page messaging-features">
+    <div class="container">
+      <div class="section-header">
+        <h2>What’s in Mokio Arc</h2>
+        <p>Explore each feature to see what Mokio Arc is building.</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card" tabindex="0">
+          <div class="role-badge" style="background: rgba(79, 139, 255, 0.15); color: #6b9bff;">Chat</div>
+          <h3>Clean, fast conversations</h3>
+          <p>Direct messages and group chats with a simple layout. Speed and clarity first, then extra features on top.</p>
+          <div class="popover-menu">
+            <div class="popover-header">
+              <span class="popover-title">Chat Specs</span>
+              <span class="popover-tag">v1.1</span>
+            </div>
+            <ul class="popover-list">
+              <li>High speed chatting and calling</li>
+              <li>Clean layouts</li>
+            </ul>
+            <div class="popover-actions">
+              <a class="popover-action-btn popover-btn-primary" href="../index.html#waitlist">Join waitlist</a>
+              <a class="popover-action-btn popover-btn-secondary" href="#more-info">More information</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card" tabindex="0">
+          <div class="role-badge" style="background: rgba(163, 92, 255, 0.15); color: #b57dff;">Play</div>
+          <h3>Game integration</h3>
+          <p>Arc is the doorway to games. Play together from a conversation instead of leaving the app for a launcher.</p>
+          <div class="popover-menu">
+            <div class="popover-header">
+              <span class="popover-title">Game Integration</span>
+              <span class="popover-tag">In-Overlay</span>
+            </div>
+            <ul class="popover-list">
+              <li>Download & Launch games directly through the app</li>
+              <li>Invite your freinds</li>
+            </ul>
+            <div class="popover-actions">
+              <a class="popover-action-btn popover-btn-primary" href="../index.html#waitlist">Join waitlist</a>
+              <a class="popover-action-btn popover-btn-secondary" href="#more-info">More information</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card" tabindex="0">
+          <div class="role-badge" style="background: rgba(255, 61, 90, 0.15); color: #ff6b84;">Mods</div>
+          <h3>Built for expansion</h3>
+          <p>Mods let creators add experiences, features, and interactions on top of chat, paving the path into games.</p>
+          <div class="popover-menu">
+            <div class="popover-header">
+              <span class="popover-title">Mod Ecosystem</span>
+              <span class="popover-tag">Connect</span>
+            </div>
+            <ul class="popover-list">
+              <li>API & Webhook</li>
+              <li>Custom or default seamless overlays</li>
+              <li>Cross-platform Compatibility</li>
+            </ul>
+            <div class="popover-actions">
+              <a class="popover-action-btn popover-btn-primary" href="../index.html#waitlist">Join waitlist</a>
+              <a class="popover-action-btn popover-btn-secondary" href="#more-info">More information</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card" tabindex="0">
+          <div class="role-badge" style="background: rgba(79, 139, 255, 0.15); color: #6b9bff;">Platform</div>
+          <h3>Connected to Mokio</h3>
+          <p>Accounts, music, and future products stay linked. Messaging is one surface of the platform, not a standalone app.</p>
+          <div class="popover-menu">
+            <div class="popover-header">
+              <span class="popover-title">Mokio Core</span>
+              <span class="popover-tag">Unified Sync</span>
+            </div>
+            <ul class="popover-list">
+              <li>Connected to other Mokio products</li>
+              <li>Link to other platforms</li>
+            </ul>
+            <div class="popover-actions">
+              <a class="popover-action-btn popover-btn-primary" href="../index.html#waitlist">Join waitlist</a>
+              <a class="popover-action-btn popover-btn-secondary" href="music.html">Explore Mokio Wave</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <div class="feature-card-middle">
+        <h3>What's in development</h3>
+        <br>
+        <ul class="feature-list">
+          <li>Messaging feature</li>
+          <li>Calling feature</li>
+          <li>Groups</li>
+        </ul>
+        <a href="../index.html#waitlist" class="feature-link">Learn more</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="extra-info" id="more-info">
+    <div class="container extra-info-inner">
+      <h2>More information</h2>
+      <div class="extra-info-copy">
+        <p>Mokio Arc is an open-design messaging app designed for easy communication. Arc will launch as a simple app featuring a web version connected via the Mokio app. Later on, Arc will expand into gaming with integrations that allow users to install a mod and use Mokio Arc directly within their favorite games. The platform also enables users to find and join each other's game sessions effortlessly. Additionally, Arc features seamless integration with the music app Mokio Wave, allowing users to listen to songs together with their friends.</p>
+      </div>
+    </div>
+  </section>
+
+  <div data-component="auth-modal"></div>
+
+  <div data-component="footer"></div>
+  <script src="../script/components.js"></script>
+  <script src="../script/script.js"></script>
+</body>
+</html>
