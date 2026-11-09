@@ -71,6 +71,7 @@
       <div class="footer-links">
         <a href="${ROOT}index.html">Home</a>
         <a href="${ROOT}index.html#features">Features</a>
+        <a href="https://releases.mokio.online">Releases</a>
         <a href="${ROOT}pages/music.html">Music</a>
         <a href="${ROOT}pages/messaging.html">Messaging</a>
         ${lastLink}
